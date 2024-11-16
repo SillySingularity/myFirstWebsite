@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySpace-Style Profile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ff1493;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 10 L40 25 L30 40 L20 25z' fill='%23000' stroke='none' opacity='0.2'/%3E%3C/svg%3E");
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .profile-section {
+            background-color: #00ff00;
+            border: 3px solid #000;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .content-section {
+            background-color: #000;
+            border: 3px solid #00ff00;
+            padding: 15px;
+            border-radius: 8px;
+            color: #fff;
+        }
+
+        .profile-pic {
+            width: 100%;
+            max-width: 200px;
+            border: 2px solid #000;
+            margin-bottom: 15px;
+        }
+
+        .action-button {
+            background-color: #000;
+            color: #00ff00;
+            border: none;
+            padding: 8px 12px;
+            margin: 5px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .action-button:hover {
+            background-color: #333;
+        }
+
+        .button-icon {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            background-color: #00ff00;
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E");
+            -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E");
+        }
+
+        h1, h2 {
+            color: #000;
+            margin: 0 0 15px 0;
+        }
+
+        .content-section h2 {
+            color: #00ff00;
+        }
+
+        .mood {
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <h1>Matt</h1>
+            <img src="/api/placeholder/200/200" alt="Profile Picture" class="profile-pic">
+            <div class="mood">
+                Mood: over it
+            </div>
+            <button class="action-button">
+                <span class="button-icon"></span>
+                Add to Friends
+            </button>
+            <button class="action-button">
+                <span class="button-icon"></span>
+                Send Message
+            </button>
+            <button class="action-button">
+                <span class="button-icon"></span>
+                Add to Favorites
+            </button>
+            <button class="action-button">
+                <span class="button-icon"></span>
+                Forward to Friend
+            </button>
+            <button class="action-button">
+                <span class="button-icon"></span>
+                Block User
+            </button>
+        </div>
+        <div class="content-section">
+            <h2>Matt's Latest Blog Entries</h2>
+            <p>There are no blog entries yet.</p>
+            
+            <h2>About me:</h2>
+            <p>I like to write poetry and play bass</p>
+        </div>
+    </div>
+</body>
+</html>
